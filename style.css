@@ -38,6 +38,7 @@ img {
     cursor: pointer;
 }
 
+/* visible panel - the heading section we click */
 .question-panel {
     display: flex;
     justify-content: space-between;
@@ -58,10 +59,13 @@ img {
     margin-right: 10px;
     width: 25px;
     cursor: pointer;
+    /* cancels out the click on heading and img allowing the whole section to be clicked. */
     pointer-events: none;
 }
 
+/* toggle panel, the answer that will be revealed. */
 .answer-panel {
+    /* will add padding with JS, to stop it being applied when before items are clicked on. */
     padding: 0 15px;
     /* height: 0px;
     opacity: 0; */
